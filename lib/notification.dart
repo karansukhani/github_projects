@@ -26,9 +26,7 @@ class Homepage extends StatelessWidget {
         appBar: AppBar(
             title: Text("FirstPage")
         ),
-        body:Column(
-    children:[
-      // Image.asset('assets/images/backimg.jpg'),
+        body:
 ListView(
 
   children: [
