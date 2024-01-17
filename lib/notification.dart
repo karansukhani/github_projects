@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(Flutterapp());
@@ -20,9 +21,12 @@ class Flutterapp extends StatelessWidget{
 }
 //For materialapp we use scaffold class
 class Homepage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
+    var time=DateTime.now();
     return Scaffold(
+      backgroundColor: Colors.blue,
         appBar: AppBar(
             title: Text("FirstPage")
         ),
@@ -31,10 +35,10 @@ ListView(
 
   children: [
 
-   Column(
+ Column(
        children: [
-         Center(child: Text('Tuesday,10 October')),
-         Center(child: Text('2:00',style: TextStyle(fontSize: 30,fontWeight: FontWeight.w500),))
+         Center(child: Text('${DateFormat('MMMMd').format(time)}')),
+         Center(child: Text("${time.hour}:${time.minute}",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w500),))
        ],
      ),
 
@@ -59,6 +63,91 @@ ListView(
       ],
     )
        ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+    Card( child:Column(
+      children: [
+        Text('Mummy ❤️',style: TextStyle(fontWeight: FontWeight.w500),),
+        Text('You have a missed call from +911282918911 on 10 Oct 2023....'),
+      ],
+    ) ,
+    ),
+
   ],
 ),
 );
